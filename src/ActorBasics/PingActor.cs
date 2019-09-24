@@ -7,7 +7,7 @@ using Akka.Util;
 
 namespace ActorBasics
 {
-    public class PingActor : ReceiveActor
+    public class PingActor : Akka.Actor.ReceiveActor
     {
         private readonly ILoggingAdapter _log = Context.GetLogger();
 
